@@ -16,7 +16,7 @@ def calc_matrix_significance(ranks_mat):
             sys.exit()
     ranks_mat = format_input(ranks_mat)
     pvalues = []
-    for col in range(ranks_mat.shape[0]):
+    for i in range(ranks_mat.shape[0]):
         max_rank = np.max(ranks_mat)
-        pvalues.append(calc_rank_ensemble_pvalue(np.array(ranks_mat[col,:]), max_rank))
+        pvalues.append(calc_rank_ensemble_pvalue(np.array(ranks_mat[i,:]), max_rank))
     return(pvalues)
