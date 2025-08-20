@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from rankensemblesig import calc_rank_ensemble_pvalue
+from .calc_rank_ensemble_pvalue import calc_rank_ensemble_pvalue
 import sys
 
 def calc_matrix_significance(ranks_mat):
