@@ -1,19 +1,30 @@
 from setuptools import setup, find_packages
 
 setup(
-	name="rankensemblesig",
-	version="0.1.0",
-	description="Calculates p-values for an ensemble of ranks",
-	author="Your Name",
-	packages=find_packages(where="src"),
-	package_dir={"": "src"},
-	install_requires=[
-		"pandas",
-		"numpy",
-		"scipy",
-	],
-	include_package_data=True,
-	entry_points={
-		"console_scripts": [" = examples.example_load_model:example_load",],
-	}
+    name="rankensemblesig",
+    version="0.1.1",
+    description="Significance testing for ensembles of rank data",
+    author="Paul Nelson",
+    author_email="your_email@example.com",
+    url="https://github.com/pgnelson/rankensemblesig",
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
+    install_requires=[
+        "numpy",
+        "pandas",
+        "scipy",
+    ],
+    python_requires=">=3.8",
+    entry_points={
+        "console_scripts": [
+            "example-matrix=examples.example_matrix:main",
+            "example-list=examples.example_list:main",
+        ],
+    },
+    include_package_data=True,
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
