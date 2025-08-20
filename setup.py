@@ -11,7 +11,6 @@ setup(
 		"pandas",
 		"numpy",
 		"scipy",
-    "math"
 	],
 	include_package_data=True,
 	entry_points={
