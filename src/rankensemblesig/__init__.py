@@ -4,5 +4,5 @@ from .calc_rank_ensemble_pvalue import calc_rank_ensemble_pvalue
 
 __all__ = [
     "calc_matrix_significance",
-    "calc_rank_ensemble_pvalue",
+    "calc_rank_ensemble_pvalue"
 ]
