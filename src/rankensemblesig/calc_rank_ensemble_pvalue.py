@@ -2,7 +2,7 @@ import numpy as np
 from scipy.special import factorial
 import math
 
-def calc_rank_ensemble_pvalue(ranks, max_rank):
+def calc_rank_ensemble_pvalue(ranks, max_rank, return_log = False):
     def n_choose_k(n, k):
         return factorial(n, exact=True) / (factorial(k, exact=True) * factorial(n - k, exact=True))
     def is_odd_or_even(n):
@@ -19,4 +19,6 @@ def calc_rank_ensemble_pvalue(ranks, max_rank):
 
         total_ways += is_odd_or_even(n_hits) * ways
     pval = math.log(total_ways) - math.log(factorial(n_ind, exact=True)**n_samples)
+    if not return_log:
+        pval = np.exp(pval)
     return pval
