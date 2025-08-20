@@ -1,3 +1,5 @@
-from rankensemblesig import calc_rank_ensemble_pvalue
+from rankensemblesig import calc_matrix_significance
 def main():
-  calc_rank_ensemble_pvalue(np.array([1,1,2,2]), 3)
+  test_dat = np.array([[1,2,3, 4], [2,1,3, 4], [1,3,4,2]])
+  print("Test matrix: " + str(test_dat))
+  print(calc_rank_ensemble_pvalue(test_dat))
