@@ -5,7 +5,7 @@ setup(
     version="0.1.1",
     description="Significance testing for ensembles of rank data",
     author="Paul Nelson",
-    author_email="your_email@example.com",
+    author_email="pgnelson307@gmail.com",
     url="https://github.com/pgnelson/rankensemblesig",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
