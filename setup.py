@@ -18,7 +18,7 @@ setup(
     entry_points={
         "console_scripts": [
             "example-matrix=examples.example_matrix:main",
-            "example-list=examples.example_list:main",
+            "example-single-sample=examples.example_single_sample:main",
         ],
     },
     include_package_data=True,
