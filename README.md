@@ -20,4 +20,4 @@ Second, ranks of features are inherently depedent on each other. If someone assi
 In short, we have to adjust for multiple observations and the fact that observations are dependent on each other.
 For feature i out of n total features (making the highest rank n), and samples j:
 
-$p(r_j) =(n!)^{-s}\displaystyle\sum_{k=1}^{min(r_i)} (-1)^{(k+1)}{n \choose k} \displaystyle\prod_{j=1} {r_{ij} \choose k} k! (n - k)!$
+$p(r_i) =(n!)^{-s}\displaystyle\sum_{k=1}^{min(r_i)} (-1)^{(k+1)}{n \choose k} \displaystyle\prod_{j=1} {r_{ij} \choose k} k! (n - k)!$
