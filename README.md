@@ -18,5 +18,6 @@ If you add up the ranks Pizza is the winner. But lets say you prefer tacos, and 
 First, we're not really interested in Pizza specifically. If Sandwiches was the most highly ranked food we would be focusing on Sandwiches. So we're not interesting in the probability of observing the ranks of Pizza, but in the probability of observing any feature with the ranks seen in Pizza. 
 Second, ranks of features are inherently depedent on each other. If someone assigns Tacos rank 3 they can't also assign Pizza rank 3.
 In short, we have to adjust for multiple observations and the fact that observations are dependent on each other.
+For feature i out of n total features (making the highest rank n), and samples j:
 
-$p(r_j) = {r_{max} \choose k} {r_{ij} \choose k} k! (r_{max} - k)$
+$p(r_j) =(n!)^{-s}\displaystyle\sum_{k=1}^{min(r_i)} (-1)^{(k+1)}{n \choose k} \displaystyle\prod_{j=1} {r_{ij} \choose k} k! (n - k)!$
